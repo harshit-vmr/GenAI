@@ -1,6 +1,8 @@
 ipykernel
-numpy
+numpy==2.0.2
 pandas
+nbformat
+plotly
 matplotlib
 seaborn
 flask
