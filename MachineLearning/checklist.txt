@@ -1,0 +1,50 @@
+For Regression:
+
+🔄 Final Checklist Before Modeling:
+
+a. Missing values handled?
+b. All categorical variables encoded?
+c. Numerical features scaled?
+d. Multicollinearity removed?
+e. Outliers checked?
+f. Features transformed if needed (e.g., log, sqrt)?
+g. Data split into train/val/test?
+h. For logistic regression: Is class imbalance addressed?
+
+
+
+For Decision Trees:
+
+1. Handle Missing Values
+2. Encode Categorical Variables
+Random Forest works only with numerical inputs, so categorical encoding is essential.
+
+3. Remove or Treat Outliers (Optional)
+Random Forest is not very sensitive to outliers, but:
+Extreme outliers can still reduce model interpretability or feature importance accuracy.
+Use boxplots/z-scores/IQR to inspect outliers, but don't aggressively remove them unless justified.
+
+4. Feature Scaling
+⚠️ Do not scale (e.g., StandardScaler/MinMaxScaler). Random Forests don't need normalization or standardization because they are not distance-based.
+
+5. Multicollinearity
+Multicollinearity is not a problem for Random Forest. It can:
+Split on one of the correlated features.
+Naturally handle redundant features.
+But for interpretation or feature importance analysis, dropping highly correlated variables may help.
+
+6. Feature Selection
+Random Forest is good at ignoring irrelevant features, but still:
+Remove low-variance or constant features
+
+7. Deal with Imbalanced Data
+If you're doing classification with imbalanced target classes:
+Use class weights (class_weight='balanced')
+Apply resampling:
+SMOTE / ADASYN (oversampling minority)
+Random undersampling
+Try BalancedRandomForestClassifier from imblearn
+
+8. Train/Test Split and Leakage Check
+Always split data before imputation or encoding based on target.
+Watch for data leakage from features derived from target variable.
