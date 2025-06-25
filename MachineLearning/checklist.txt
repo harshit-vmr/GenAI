@@ -5,8 +5,8 @@ For Regression:
 a. Missing values handled?
 b. All categorical variables encoded?
 c. Numerical features scaled?
-d. Multicollinearity removed?
-e. Outliers checked?
+d. Multicollinearity removed? -- Dectect: Corelation Matrix, Variance Inflation Factor (VIF) -- Remove: Dropone feature, Combine(PCA)
+e. Outliers checked? -- Dectect: Visual, Z score -- Remove: Remove, Cap
 f. Features transformed if needed (e.g., log, sqrt)?
 g. Data split into train/val/test?
 h. For logistic regression: Is class imbalance addressed?
