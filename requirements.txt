@@ -10,4 +10,5 @@ memory_profiler
 streamlit
 scikit-learn
 tensorflow
+tensorboard
 nltk
