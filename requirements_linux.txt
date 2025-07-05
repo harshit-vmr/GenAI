@@ -9,7 +9,7 @@ flask
 memory_profiler
 streamlit
 scikit-learn
-tensorflow[and-cuda]==2.16.1
+tensorflow
 tensorboard
 nltk
 scikeras
