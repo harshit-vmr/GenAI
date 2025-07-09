@@ -9,7 +9,14 @@ flask
 memory_profiler
 streamlit
 scikit-learn
-tensorflow
+tensorflow[and-cuda]
 tensorboard
 nltk
 scikeras
+langchain
+python-dotenv
+langchain_community
+pypdf
+bs4
+arxiv
+pymupdf
