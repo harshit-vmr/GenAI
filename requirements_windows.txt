@@ -21,3 +21,7 @@ bs4
 arxiv
 pymupdf
 unstructured
+langchain-ollama
+sentence-transformers
+langchain-huggingface
+huggingface_hub[hf_xet]
