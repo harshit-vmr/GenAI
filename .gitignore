@@ -1,4 +1,7 @@
+.vscode/
 .venv/
 MachineLearning/Datasets/nyctaxifare/
 .python-version
 .env
+Langchain/Basics/chroma_db/
+Langchain/Basics/faiss_index/
