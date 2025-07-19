@@ -28,3 +28,6 @@ huggingface_hub[hf_xet]
 faiss-cpu
 langchain-chroma
 beautifulsoup4
+fastapi
+uvicorn
+langserve[all]
